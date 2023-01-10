@@ -10,9 +10,7 @@ jobs:
   steps:
    - name: Checkout-code
      uses: actions/checkout@v2
-   
-   - name: Super-linter
-     uses: github/super-linter@4.9.5
-     env:
-      DEFAULT_BRANCH: main
+     
+   - name: print-hello
+     run: echo " Hello "
    
