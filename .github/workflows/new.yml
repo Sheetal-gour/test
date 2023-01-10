@@ -4,7 +4,7 @@ on: push
 
 jobs: 
  super-lint: 
-  name: super-linter
+  name: super-linter-base
   runs-on: linux-latest
   
   steps:
