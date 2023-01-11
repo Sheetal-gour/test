@@ -19,9 +19,8 @@ jobs:
    
 ---
 
-name: Printitng Hello
-
 on: push
+
 
 jobs: 
  print: 
