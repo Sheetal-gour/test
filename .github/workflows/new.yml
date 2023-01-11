@@ -1,33 +1,37 @@
-name: Super-Linter
+# name: Super-Linter
 
-on:
- push:
-  branches:
-   master
+# on:
+#  push:
+#   branches:
+#    master
 
-jobs: 
- super-lint: 
-  name: super-linter-base
-  runs-on: ubuntu-latest
+# jobs: 
+#  super-lint: 
+#   name: super-linter-base
+#   runs-on: ubuntu-latest
   
-  steps:
-   - name: Checkout-code
-     uses: actions/checkout@v2
+#   steps:
+#    - name: Checkout-code
+#      uses: actions/checkout@v2
      
-   - name: print-hello
-     run: echo " Hello "
+#    - name: print-hello
+#      run: echo " Hello "
    
----
+# ---
 
 name: Printitng Hello
 
 on: push
 
 jobs: 
- echo:
+ print: 
   name: printing 
   runs-on: ubuntu-latest
-  
+
   steps: 
+  
+  - name: Checkout-version
+    uses: actions/checkout@v2
+    
   - name: Print
     run: echo "Hello"
