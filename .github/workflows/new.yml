@@ -17,3 +17,17 @@ jobs:
    - name: print-hello
      run: echo " Hello "
    
+---
+
+name: Printitng Hello
+
+on: push
+
+jobs: 
+ echo:
+  name: printing 
+  runs-on: ubuntu-latest
+  
+  steps: 
+  - name: Print
+    run: echo "Hello"
